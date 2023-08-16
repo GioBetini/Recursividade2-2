@@ -7,9 +7,9 @@ public class Divide {
 	}
 	public int Div(int divisor, int dividendo) {
 		if(dividendo<divisor) {
-			return dividendo;
+			return dividendo;  //A recursividade se encerra quando o dividendo for maior que o divisor (gerando o resto)
 		}
-		return Div(divisor,dividendo-divisor);
+		return Div(divisor,dividendo-divisor); // chamamos a função recursiva subtraindo o divisor do dividendo até obtermos o resto
 	} 
 
 }
